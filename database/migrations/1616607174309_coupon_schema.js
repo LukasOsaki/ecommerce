@@ -8,7 +8,7 @@ class CouponSchema extends Schema {
     this.create('coupons', (table) => {
       table.increments()
       table.string('code', 100).notNullable()
-      table.dateTime('valid_form')
+      table.dateTime('valid_from')
       table.dateTime('valid_until')
       table.integer('quantity').defaultTo(1)
       table.enu('can_use_for', ['product', 'client', 'product_client', 'all'])
