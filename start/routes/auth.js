@@ -15,8 +15,8 @@ Route.group(() => {
 
     // Restore password routes
     Route.post('reset-password', 'AuthController.forgot').as('auth.forgot')
-    Route.post('reset-password', 'AuthController.remeber').as('auth.remeber')
-    Route.post('reset-password', 'AuthController.reset').as('auth.reset')
+    Route.get('reset-password', 'AuthController.remeber').as('auth.remeber')
+    Route.put('reset-password', 'AuthController.reset').as('auth.reset')
 })
     .prefix('v1/auth')
     .namespace('Auth')
