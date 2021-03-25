@@ -22,7 +22,7 @@ Route.group(() => {
     /**
    * Order resource routes
    */
-    Route.resource('orders', 'OrdersController').apiOnly()
+    Route.resource('orders', 'OrderController').apiOnly()
 
     /**
     * Image resource routes
