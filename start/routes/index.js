@@ -20,3 +20,6 @@ Route.on('/').render('welcome')
 
 // importa a as rotas de autentificação 
 require('./auth')
+
+// importa a as rotas de admin
+require('./admin')
