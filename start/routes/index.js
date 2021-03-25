@@ -17,3 +17,6 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+// importa a as rotas de autentificação 
+require('./auth')
